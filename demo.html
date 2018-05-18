@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>嘿！生日快乐</title>
+		<style type="text/css">
+		body{
+			
+			background: url(images/微信图片_20180504182231.jpg);
+			overflow: hidden;
+		}
+		.container img{display: inline-block;}
+		.container{ margin:50px auto ; overflow:hidden;text-align: center;
+				animation: x-spin 30s linear 20s infinite alternate;
+		}
+		.img_3d,.line_3d{
+			-webkit-transform-style:preserve-3d;
+			-webkit-animation-iteration-count:infinite;
+			-webkit-animation-timing-function:linear;
+		}
+		.line1{
+			-webkit-animation-name:y-spin;
+			-webkit-animation-duration:20s;
+		}
+		.line2{
+			-webkit-animation-name:back-y-spin;
+			-webkit-animation-duration:15s;
+		}
+		.line3{
+			-webkit-animation-name:y-spin;
+			-webkit-animation-duration:10s;
+		}
+		@-webkit-keyframes x-spin {
+		0%    { -webkit-transform:rotateX(0deg); }
+		50%   { -webkit-transform:rotateX(180deg); }
+		100%  { -webkit-transform:rotateX(360deg); }
+		}
+		@-webkit-keyframes y-spin {
+		0%    { -webkit-transform:rotateY(0deg); }
+		50%   { -webkit-transform:rotateY(180deg); }
+		100%  { -webkit-transform:rotateY(360deg); }
+		}
+		@-webkit-keyframes back-y-spin {
+		0%    { -webkit-transform:rotateY(360deg); }
+		50%   { -webkit-transform:rotateY(180deg); }
+		100%  { -webkit-transform:rotateY(0deg); }
+		}
+		</style>
+	</head>
+	<body>
+		
+		<div  class="container">
+			<div  class="line1 line_3d">
+				<img class="img_3d"  src="images/1.jpg" />
+				<img class="img_3d"  src="images/2.jpg" />
+				<img class="img_3d"  src="images/3.jpg"/>
+				<img class="img_3d"  src="images/4.jpg" />
+				<img class="img_3d"  src="images/5.jpg" />
+				<img class="img_3d"  src="images/6.jpg" />
+				<img class="img_3d"  src="images/7.jpg" />
+				<img class="img_3d"  src="images/8.jpg" />
+				<img class="img_3d"  src="images/9.jpg" />
+			</div>
+			<div  class="line2 line_3d">
+				<img class="img_3d"  src="images/10.jpg" />
+				<img class="img_3d"  src="images/11.jpg" />
+				<img class="img_3d"  src="images/12.jpg" />
+				<img class="img_3d"  src="images/13.jpg" />
+				<img class="img_3d"  src="images/14.jpg" />
+				<img class="img_3d"  src="images/15.jpg" />
+				<img class="img_3d"  src="images/24.jpg" />
+			</div>
+			<div  class="line3 line_3d">
+				<img class="img_3d"  src="images/15.jpg"/>
+				<img class="img_3d"  src="images/16.jpg" />
+				<img class="img_3d"  src="images/17.jpg" />
+				<img class="img_3d"  src="images/18.jpg" />
+				<img class="img_3d"  src="images/19.jpg" />
+				<img class="img_3d"  src="images/20.jpg" />
+				<img class="img_3d"  src="images/21.jpg" />
+				<img class="img_3d"  src="images/22.jpg" />
+				<img class="img_3d"  src="images/23.jpg" />
+				
+			</div>
+		</div>
+		<audio src="raw/群星 - 祝我生日快乐(吉他弹唱 ).mp3" autoplay="autoplay"></audio>
+	</body>
+</html>
